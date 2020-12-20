@@ -2,6 +2,10 @@ routes:
   /rss/:
     template: rss
     content_type: text/xml
+  /evropa/:
+    controller: channel
+    template: evropa
+    filter: tag:evropa
 
 collections:
   /:

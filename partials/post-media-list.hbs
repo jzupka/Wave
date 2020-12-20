@@ -7,12 +7,12 @@
             <div class="button button-play"><i class="icon icon-play"></i></div>
         {{/if}}
     {{/if}}
-    <div class="u-placeholder post-media-reserve">
+    <div class="u-placeholder post-media-list-reserve {{#if ratio}} {{ratio}}{{/if}}">
         {{^if feature_image}}
             <span class="letter">{{title}}</span>
         {{/if}}
         <img class="post-image lazyload u-object-fit" {{#if feature_image}}
-            data-srcset="{{img_url feature_image size="xs"}} 150w, {{img_url feature_image size="s"}} 300w, {{img_url feature_image size="m"}} 750w, {{img_url feature_image size="l"}} 960w"
+            data-srcset="{{img_url feature_image size="xs"}} 150w, {{img_url feature_image size="s"}} 300w"
             {{/if}}
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-sizes="auto" alt="{{title}}">

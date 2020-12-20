@@ -3,10 +3,17 @@
     flex-shrink: 0;
     overflow: hidden;
     margin-right: 25px;
-    width: 150px;
-    height: 100%;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.post-media-reserve {
+    height: 300px;
+}
+
+.post-media-list-reserve {
+    height: 150px;
+    width: 150px;
 }
 
 .post-media .button-play {

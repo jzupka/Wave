@@ -7,11 +7,11 @@
         "ghost-api": "v3"
     },
     "license": "MIT",
-        "author": {
-            "name": "Ghost Foundation",
-            "email": "hello@ghost.org",
-            "url": "https://ghost.org"
-        },
+    "author": {
+        "name": "Ghost Foundation",
+        "email": "hello@ghost.org",
+        "url": "https://ghost.org"
+    },
     "keywords": [
         "ghost",
         "theme",
@@ -20,17 +20,23 @@
     "config": {
         "posts_per_page": 5,
         "image_sizes": {
-            "1x": {
-                "width": 150,
-                "height": 150
+            "xxs": {
+                "width": 30
             },
-            "2x": {
-                "width": 300,
-                "height": 300
+            "xs": {
+                "width": 100
             },
-            "3x": {
-                "width": 450,
-                "height": 450
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            },
+            "xl": {
+                "width": 2000
             }
         }
     },
@@ -56,5 +62,8 @@
         "stylelint": "^13.7.1",
         "stylelint-config-standard": "^20.0.0",
         "stylelint-order": "^4.1.0"
+    },
+    "dependencies": {
+        "zip": "^1.2.0"
     }
 }
